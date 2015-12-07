@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Mi primer proyecto
 ============================
 
@@ -99,3 +100,6 @@ return [
 **NOTE:** Yii won't create the database for you, this has to be done manually before you can access it.
 
 Also check and edit the other files in the `config/` directory to customize your application.
+=======
+# PrograWeb
+>>>>>>> 4279da2cc1c0d2fa20a9ee19cdd9b0428a259df6
