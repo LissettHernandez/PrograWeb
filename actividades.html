@@ -48,11 +48,19 @@
   <p>BIENVENIDO</p>
   <div class="row">
     <div class="col-sm-3" style="background-color:LightBlue;"><!--//Derecho-->
-      <h3>Usuario</h3>
+
+    <?php
+$usuario = $_POST['idusuario'];
+$descripcion = $_POST['descripcion'];
+$link= mysql_connect(db569781827.db.1and1.com , dbo569781827 , peke1608);
+$show= mysql_query("Select idusuario from actividades,$link";
+
+?> 
+    
       <!--Imagen del usuario-->
 <div class="container">
-    <img src="Actividades_Img1.jpg" class="img-circle" alt="Imagen usuario" width="204" height="136"> 
-  <em><h5>Aqui Nombre_usuario</h5></em>
+    <img src="actividad1.jpg" class="img-circle" alt="Imagen usuario" width="204" height="136"> 
+  <em><h5> <?php echo $usuario;?></h5></em>
 </div>
     </div>
     <div class="col-sm-9" style="background-color:Lavender;"><!--//Izquierdo-->
@@ -61,14 +69,13 @@
          <table class="table table-striped"><!--//Crear Tabla dentro del grid2-->
        <thead>
         <tr>
-         <th>Tipo</th>
-         <th>Nombre</th>
+        
        </tr>
       </thead>
         <tbody>
           <tr>
-           <td>Curso</td>
-           <td>Impartir el curso de MEAN del 1 de enero al 20 de febrero del 2015</td>
+           <td><?php echo $descripcion;?></td>
+           <td></td>
           </tr>
        </tbody>
          </table>
