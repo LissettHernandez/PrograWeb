@@ -1,7 +1,84 @@
-
+<!DOCTYPE html>
 <html>
+<head>
+<title>Programacion Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+   
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Inicio</a></li>
+        <li><a href="#">Cursos</a></li>
+        <li><a href="#">Actividades</a></li>
+        <li><a href="#">Equipo</a></li>
+      </ul>
+        </div>
+  </div>
+</nav>
 
-F
-
-A
+<!--//Grid stacked/Horizontal//Comentario-->
+<div class="container-fluid">
+  <h1>Administrador de tareas</h1>
+  <p>BIENVENIDO</p>
+  <div class="row">
+    <div class="col-sm-3" style="background-color:LightBlue;"><!--//Derecho-->
+      <h3>Usuario</h3>
+      <!--Imagen del usuario-->
+<div class="container">
+    <img src="Actividades_Img1.jpg" class="img-circle" alt="Imagen usuario" width="204" height="136"> 
+  <em><h5>Aqui Nombre_usuario</h5></em>
+</div>
+    </div>
+    <div class="col-sm-9" style="background-color:Lavender;"><!--//Izquierdo-->
+      <div class="container">
+       <h3>Tareas</h3>    
+         <table class="table table-striped"><!--//Crear Tabla dentro del grid2-->
+       <thead>
+        <tr>
+         <th>Tipo</th>
+         <th>Nombre</th>
+       </tr>
+      </thead>
+        <tbody>
+          <tr>
+           <td>Curso</td>
+           <td>Impartir el curso de MEAN del 1 de enero al 20 de febrero del 2015</td>
+          </tr>
+       </tbody>
+         </table>
+     </div>
+    </div>
+  </div>
+</div>
+<!--Termina grid horizontal-->
+<footer class="container-fluid text-center" style="background-color:black;">
+  <p>Materia | Programacion web</p>
+</footer>
+</body>
 </html>
